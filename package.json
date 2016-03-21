@@ -1,32 +1,27 @@
 {
-  "name": "fixaleak.web",
-  "version": "0.0.1",
-  "description": "UI for FixALeak",
-  "main": "main",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "babel-preset-react": "^6.3.13",
-    "babelify": "^7.2.0",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3"
-  },
-  "devDependencies": {
-    "babel-preset-es2015": "^6.3.13",
-    "karma-babel-preprocessor": "^6.0.1"
-  },
+  "name": "FixALeak.Web",
+  "version": "1.0.0",
   "scripts": {
-    "test": "test"
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/szybkiwx/FixALeak.Web.git"
-  },
-  "author": "Andrzej Dajnowski (andrzej.dajnowski@gmail.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/szybkiwx/FixALeak.Web/issues"
-  },
-  "homepage": "https://github.com/szybkiwx/FixALeak.Web#readme"
+  "license": "ISC",
+  "dependencies": {
+      "angular2": "2.0.0-beta.09",
+      "bootstrap": "^3.3.6",
+      "es6-promise": "^3.0.2",
+      "es6-shim": "^0.33.3",
+      "ng2-bootstrap": "1.0.7",
+      "reflect-metadata": "0.1.2",
+      "rxjs": "5.0.0-beta.2",
+      "systemjs": "0.19.23",
+      "zone.js": "0.5.15"
+    },
+  "devDependencies": {
+    "concurrently": "1.0.0",
+    "lite-server": "2.1.0",
+    "typescript": "1.8.9"
+  }
 }
