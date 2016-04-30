@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'ng2-bootstrap/ng2-bootstrap'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,32 +10,28 @@ System.register(['angular2/core', 'ng2-bootstrap/ng2-bootstrap'], function(expor
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, ng2_bootstrap_1;
-    var AppComponent;
+    var core_1;
+    var TestComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (ng2_bootstrap_1_1) {
-                ng2_bootstrap_1 = ng2_bootstrap_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            TestComponent = (function () {
+                function TestComponent() {
                 }
-                AppComponent = __decorate([
+                TestComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        directives: [ng2_bootstrap_1.Alert],
-                        templateUrl: 'app/test.html',
+                        selector: 'test',
+                        template: "<h1>AAAA</h1>"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], TestComponent);
+                return TestComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("TestComponent", TestComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=test.js.map
